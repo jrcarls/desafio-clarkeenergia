@@ -13,9 +13,16 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
+    from model.estado import Estado    
     from routes.estados import bp_estados
 
     app.register_blueprint(bp_estados)
+
+    @app.cli.command("seed-estados")
+    def seed_estados_command():
+        from seed import seed_estados
+        seed_estados()
+        print("Seed executado com sucesso!")
 
     @app.route("/")
     def index():
