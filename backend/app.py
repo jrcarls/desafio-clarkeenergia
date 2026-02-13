@@ -13,10 +13,12 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from routes.mercado_livre import bp_mercado_livre
-    from routes.geracao_distribuida import bp_geracao_distribuida
-    
-    app.register_blueprint(bp_mercado_livre)
-    app.register_blueprint(bp_geracao_distribuida)
+    from routes.estados import bp_estados
+
+    app.register_blueprint(bp_estados)
+
+    @app.route("/")
+    def index():
+        return "<p>Clarkeenergia</p>"
 
     return app
