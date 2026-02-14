@@ -22,8 +22,12 @@ def create_app():
 
     @app.cli.command("seed-estados")
     def seed_estados_command():
-        from seed import seed_estados
+        from seed import seed_estados, seed_fornecedores, seed_solucoes, seed_solucao_fornecedor
         seed_estados()
+        seed_fornecedores()
+        seed_solucoes()
+        seed_solucao_fornecedor()
+        
         print("Seed executado com sucesso!")
 
     @app.route("/")
