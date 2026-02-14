@@ -1,8 +1,8 @@
 """initial structure
 
-Revision ID: 35bae9f3da33
+Revision ID: d7e8ad3966a4
 Revises: 
-Create Date: 2026-02-14 14:19:11.267485
+Create Date: 2026-02-14 14:59:43.162526
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '35bae9f3da33'
+revision = 'd7e8ad3966a4'
 down_revision = None
 branch_labels = None
 depends_on = None
@@ -27,8 +27,10 @@ def upgrade():
     )
     op.create_table('solucoes',
     sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('cod', sa.String(length=20), nullable=False),
     sa.Column('nome', sa.String(length=50), nullable=False),
     sa.PrimaryKeyConstraint('id'),
+    sa.UniqueConstraint('cod'),
     sa.UniqueConstraint('nome')
     )
     op.create_table('fornecedores',
