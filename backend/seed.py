@@ -63,17 +63,16 @@ def seed_solucoes():
 
 def seed_fornecedores():
     fornecedores = [
-        {"nome": "Fornecedor A", "logo": "https://example.com/logo_a.png", "estado_id": 1, "total_clientes": 100, "avaliacoes_media": 4.5},
-        {"nome": "Fornecedor B", "logo": "https://example.com/logo_b.png", "estado_id": 2, "total_clientes": 150, "avaliacoes_media": 4.0},
-        {"nome": "Fornecedor C", "logo": "https://example.com/logo_c.png", "estado_id": 3, "total_clientes": 200, "avaliacoes_media": 4.8},
-        {"nome": "Fornecedor D", "logo": "https://example.com/logo_d.png", "estado_id": 4, "total_clientes": 250, "avaliacoes_media": 4.2},
-        {"nome": "Fornecedor E", "logo": "https://example.com/logo_e.png", "estado_id": 5, "total_clientes": 300, "avaliacoes_media": 4.7},
-        {"nome": "Fornecedor F", "logo": "https://example.com/logo_f.png", "estado_id": 6, "total_clientes": 350, "avaliacoes_media": 4.3},
-        {"nome": "Fornecedor G", "logo": "https://example.com/logo_g.png", "estado_id": 7, "total_clientes": 400, "avaliacoes_media": 4.6},
-        {"nome": "Fornecedor H", "logo": "https://example.com/logo_h.png", "estado_id": 8, "total_clientes": 450, "avaliacoes_media": 4.4},
-        {"nome": "Fornecedor I", "logo": "https://example.com/logo_i.png", "estado_id": 9, "total_clientes": 500, "avaliacoes_media": 4.9},
-        {"nome": "Fornecedor J", "logo": "https://example.com/logo_j.png", "estado_id": 10, "total_clientes": 550, "avaliacoes_media": 4.1},
-
+        {"nome": "Fornecedor A", "logo": "https://example.com/logo_a.png", "estado_origem_id": 1, "total_clientes": 100, "avaliacoes_media": 4.5},
+        {"nome": "Fornecedor B", "logo": "https://example.com/logo_b.png", "estado_origem_id": 2, "total_clientes": 150, "avaliacoes_media": 4.0},
+        {"nome": "Fornecedor C", "logo": "https://example.com/logo_c.png", "estado_origem_id": 3, "total_clientes": 200, "avaliacoes_media": 4.8},
+        {"nome": "Fornecedor D", "logo": "https://example.com/logo_d.png", "estado_origem_id": 4, "total_clientes": 250, "avaliacoes_media": 4.2},
+        {"nome": "Fornecedor E", "logo": "https://example.com/logo_e.png", "estado_origem_id": 5, "total_clientes": 300, "avaliacoes_media": 4.7},
+        {"nome": "Fornecedor F", "logo": "https://example.com/logo_f.png", "estado_origem_id": 6, "total_clientes": 350, "avaliacoes_media": 4.3},
+        {"nome": "Fornecedor G", "logo": "https://example.com/logo_g.png", "estado_origem_id": 7, "total_clientes": 400, "avaliacoes_media": 4.6},
+        {"nome": "Fornecedor H", "logo": "https://example.com/logo_h.png", "estado_origem_id": 8, "total_clientes": 450, "avaliacoes_media": 4.4},
+        {"nome": "Fornecedor I", "logo": "https://example.com/logo_i.png", "estado_origem_id": 9, "total_clientes": 500, "avaliacoes_media": 4.9},
+        {"nome": "Fornecedor J", "logo": "https://example.com/logo_j.png", "estado_origem_id": 10, "total_clientes": 550, "avaliacoes_media": 4.1},
     ]
 
     for f in fornecedores:
