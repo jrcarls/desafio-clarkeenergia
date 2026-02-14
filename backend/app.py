@@ -13,10 +13,10 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from model.estado import Estado
-    from model.fornecedor import Fornecedor
-    from model.solucao import Solucao
-    from model.solucao_fornecedor import SolucaoFornecedor
+    from models.estado import Estado
+    from models.fornecedor import Fornecedor
+    from models.solucao import Solucao
+    from models.solucao_fornecedor import SolucaoFornecedor
 
     from routes.estados import bp_estados
 

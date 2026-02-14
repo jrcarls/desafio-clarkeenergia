@@ -1,8 +1,8 @@
 from app import db
-from model.estado import Estado
-from model.solucao import Solucao
-from model.solucao_fornecedor import SolucaoFornecedor
-from model.fornecedor import Fornecedor
+from models.estado import Estado
+from models.solucao import Solucao
+from models.solucao_fornecedor import SolucaoFornecedor
+from models.fornecedor import Fornecedor
 
 def seed_estados():
     estados = [

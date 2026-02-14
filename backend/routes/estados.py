@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify
-from model.estado import Estado
+from models.estado import Estado
 from schemas.estado import Estado as EstadoSchema
 
 bp_estados = Blueprint("estados", __name__)
