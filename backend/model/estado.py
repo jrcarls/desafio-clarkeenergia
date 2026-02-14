@@ -8,5 +8,7 @@ class Estado(db.Model):
     sigla = db.Column(db.String(2), nullable=False)
     tarifa_base_kwh = db.Column(db.Float, nullable=False)
 
+    fornecedores = db.relationship('Fornecedor', backref='estado', cascade='all, delete-orphan')
+
     def __repr__(self):
         return f"<Estado {self.nome} ({self.sigla})>"
