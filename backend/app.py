@@ -15,6 +15,7 @@ def create_app():
 
     from model.estado import Estado
     from model.fornecedor import Fornecedor
+    from model.solucao import Solucao
     from routes.estados import bp_estados
 
     app.register_blueprint(bp_estados)
