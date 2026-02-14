@@ -6,7 +6,6 @@ class Fornecedor(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(100), nullable=False)
     logo = db.Column(db.String(255), nullable=True)
-    estado_id = db.Column(db.Integer, db.ForeignKey('estados.id'), nullable=False)
     total_clientes = db.Column(db.Integer, nullable=False)
     avaliacoes_media = db.Column(db.Float, nullable=False)
 
