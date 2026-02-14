@@ -19,8 +19,10 @@ def create_app():
     from models.solucao_fornecedor import SolucaoFornecedor
 
     from routes.estados import bp_estados
+    from routes.simulador import bp_simulador
 
     app.register_blueprint(bp_estados)
+    app.register_blueprint(bp_simulador)
 
     @app.cli.command("seed-popular")
     def seed_estados_command():
