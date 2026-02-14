@@ -13,7 +13,8 @@ def create_app():
     db.init_app(app)
     migrate.init_app(app, db)
 
-    from model.estado import Estado    
+    from model.estado import Estado
+    from model.fornecedor import Fornecedor
     from routes.estados import bp_estados
 
     app.register_blueprint(bp_estados)
