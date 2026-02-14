@@ -16,11 +16,13 @@ def create_app():
     from model.estado import Estado
     from model.fornecedor import Fornecedor
     from model.solucao import Solucao
+    from model.solucao_fornecedor import SolucaoFornecedor
+
     from routes.estados import bp_estados
 
     app.register_blueprint(bp_estados)
 
-    @app.cli.command("seed-estados")
+    @app.cli.command("seed-popular")
     def seed_estados_command():
         from seed import seed_estados, seed_fornecedores, seed_solucoes, seed_solucao_fornecedor
         seed_estados()
