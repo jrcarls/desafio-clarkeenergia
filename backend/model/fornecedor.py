@@ -10,5 +10,7 @@ class Fornecedor(db.Model):
     total_clientes = db.Column(db.Integer, nullable=False)
     avaliacoes_media = db.Column(db.Float, nullable=False)
 
+    solucoes = db.relationship('SolucaoFornecedor', backref='fornecedor', cascade='all, delete-orphan')
+
     def __repr__(self):
         return f"<Fornecedor {self.nome}"
