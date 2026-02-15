@@ -1,4 +1,5 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, request
+from schemas.solucao_fornecedor import SolucaoFornecedor as SolucaoFornecedorSchema
 from services.simulador_service import simular_economia
 
 bp_simulador = Blueprint("simulador", __name__)
@@ -10,4 +11,7 @@ def simular():
 
     resultado = simular_economia(estado_id, consumo_kwh)
 
-    return jsonify(resultado), 200
+    schema = SolucaoFornecedorSchema(many=True)
+    resultado_serializado = schema.dump(resultado)
+
+    return resultado_serializado, 200

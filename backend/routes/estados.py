@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify
+from flask import Blueprint
 from models.estado import Estado
 from schemas.estado import Estado as EstadoSchema
 
@@ -11,4 +11,4 @@ def listar_estados():
     schema = EstadoSchema(many=True)
     resultado = schema.dump(estados)
 
-    return jsonify(resultado), 200
+    return resultado, 200
