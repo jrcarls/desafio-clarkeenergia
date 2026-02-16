@@ -1,10 +1,10 @@
 import { StateSelect } from "./components/common/SelectField";
 import { EnergyInput } from "./components/common/NumberInput";
-import { WithAvatar } from "./components/common/Card";
 import { ButtonSearch } from "./components/common/Button";
-import { Surface, ScrollShadow } from "@heroui/react";
+import { Surface } from "@heroui/react";
 import { Separator } from "@heroui/react";
 import { useState } from "react";
+import { Basic } from "./components/common/Tabs";
 
 function App() {
   const [estadoId, setEstadoId] = useState(null);
@@ -47,11 +47,9 @@ function App() {
     }
   };
 
-  // Função para marcar os melhores de cada solução
   const processarResultados = (dados) => {
     if (!dados || dados.length === 0) return [];
 
-    // Agrupa por tipo de solução
     const mercadoLivre = dados.filter(
       (f) => f.tipo_solucao === "Mercado Livre",
     );
@@ -59,7 +57,6 @@ function App() {
       (f) => f.tipo_solucao === "Geração Distribuída",
     );
 
-    // Encontra o ID do melhor de cada grupo (maior economia)
     const melhorML =
       mercadoLivre.length > 0
         ? mercadoLivre.reduce((a, b) => (a.economia > b.economia ? a : b))
@@ -69,7 +66,6 @@ function App() {
         ? geracaoDistribuida.reduce((a, b) => (a.economia > b.economia ? a : b))
         : null;
 
-    // Marca os melhores
     return dados.map((f) => ({
       ...f,
       melhorEconomia:
@@ -77,36 +73,29 @@ function App() {
     }));
   };
 
-  // Use assim:
   const dadosProcessados = processarResultados(resultado);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
       <Surface
-        className="flex min-w-[320px] flex-col gap-3 rounded-3xl border p-6"
+        className="flex w-full max-w-6xl h-150 flex-col gap-3 rounded-3xl border p-4 md:p-6"
         variant="transparent"
       >
-        <div className="flex gap-10 items-start">
-          <div className="flex flex-col gap-6">
+        <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch md:items-start h-full">
+          <div className="flex flex-col gap-4 md:gap-6 w-full md:w-auto md:min-w-70">
             <StateSelect value={estadoId} onChange={setEstadoId} />
             <EnergyInput value={consumoKwh} onChange={setConsumoKwh} />
+            <Separator />
             <ButtonSearch onClick={handleBuscar} loading={loading} />
 
             {error && <div className="text-red-500 text-sm">{error}</div>}
 
-            <Separator className="my-4" />
-
-            {console.log(resultado) /* Exibir resultado para debug */}
+            <Separator className="my-2 md:hidden" />
           </div>
 
-          <ScrollShadow className="max-h-125 p-4">
-            <div className="flex flex-col gap-4">
-              {dadosProcessados &&
-                dadosProcessados.map((fornecedor, index) => (
-                  <WithAvatar key={index} fornecedor={fornecedor} />
-                ))}
-            </div>
-          </ScrollShadow>
+          <div className="flex-1 w-full min-w-0 overflow-hidden">
+            <Basic fornecedores={dadosProcessados} />
+          </div>
         </div>
       </Surface>
     </div>
