@@ -2,7 +2,7 @@ import { StateSelect } from "./components/common/SelectField";
 import { EnergyInput } from "./components/common/NumberInput";
 import { WithAvatar } from "./components/common/Card";
 import { ButtonSearch } from "./components/common/Button";
-import { Surface } from "@heroui/react";
+import { Surface, ScrollShadow } from "@heroui/react";
 import { Separator } from "@heroui/react";
 import { useState } from "react";
 
@@ -99,12 +99,14 @@ function App() {
             {console.log(resultado) /* Exibir resultado para debug */}
           </div>
 
-          <div className="flex flex-col gap-4">
-            {dadosProcessados &&
-              dadosProcessados.map((fornecedor, index) => (
-                <WithAvatar key={index} fornecedor={fornecedor} />
-              ))}
-          </div>
+          <ScrollShadow className="max-h-125 p-4">
+            <div className="flex flex-col gap-4">
+              {dadosProcessados &&
+                dadosProcessados.map((fornecedor, index) => (
+                  <WithAvatar key={index} fornecedor={fornecedor} />
+                ))}
+            </div>
+          </ScrollShadow>
         </div>
       </Surface>
     </div>
