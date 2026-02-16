@@ -25,7 +25,10 @@ export function WithAvatar() {
                 Origem: UF
               </Card.Description>
             </div>
-            <Chip variant="outline" className="shrink-0 text-xs">
+            <Chip
+              variant="outline"
+              className="shrink-0 text-xs bg-blue-50 text-blue-600"
+            >
               Mercado Livre
             </Chip>
           </div>
@@ -34,26 +37,30 @@ export function WithAvatar() {
           <div className="flex items-end justify-between gap-3">
             <div className="flex flex-col gap-2">
               <div>
-                <div className="text-xl font-bold leading-none">R$ 123,45</div>
-                <span className="text-xs text-muted-foreground">por mês</span>
+                <div className="text-xl font-bold leading-none">
+                  R$ 123,45/mês
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  de economia estimada
+                </span>
               </div>
 
               <div className="flex gap-4 text-xs">
                 <div>
                   <span className="text-muted-foreground">kWh: </span>
-                  <span className="font-medium">R$ 1.234,56</span>
+                  <span className="font-bold">R$ 1.234,56</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Clientes: </span>
-                  <span className="font-medium">123</span>
+                  <span className="font-bold">123</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Economia: </span>
-                  <span className="font-medium text-green-600">90%</span>
+                  <span className="font-bold text-green-600">90%</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Avaliação: </span>
-                  <span className="font-medium text-yellow-600">4.5</span>
+                  <span className="font-bold text-yellow-600">4.5</span>
                 </div>
               </div>
             </div>
@@ -81,7 +88,10 @@ export function WithAvatar() {
                 Origem: UF
               </Card.Description>
             </div>
-            <Chip variant="outline" className="shrink-0 text-xs">
+            <Chip
+              variant="outline"
+              className="shrink-0 text-xs bg-orange-50 text-orange-600"
+            >
               Geração Distribuída
             </Chip>
           </div>
@@ -90,26 +100,30 @@ export function WithAvatar() {
           <div className="flex items-end justify-between gap-3">
             <div className="flex flex-col gap-2">
               <div>
-                <div className="text-xl font-bold leading-none">R$ 123,45</div>
-                <span className="text-xs text-muted-foreground">por mês</span>
+                <div className="text-xl font-bold leading-none">
+                  R$ 123,45/mês
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  de economia estimada
+                </span>
               </div>
 
               <div className="flex gap-4 text-xs">
                 <div>
                   <span className="text-muted-foreground">kWh: </span>
-                  <span className="font-medium">R$ 1.234,56</span>
+                  <span className="font-bold">R$ 1.234,56</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Clientes: </span>
-                  <span className="font-medium">123</span>
+                  <span className="font-bold">123</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Economia: </span>
-                  <span className="font-medium text-green-600">90%</span>
+                  <span className="font-bold text-green-600">90%</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Avaliação: </span>
-                  <span className="font-medium text-yellow-600">4.5</span>
+                  <span className="font-bold text-yellow-600">4.5</span>
                 </div>
               </div>
             </div>
@@ -137,7 +151,10 @@ export function WithAvatar() {
                 Origem: UF
               </Card.Description>
             </div>
-            <Chip variant="outline" className="shrink-0 text-xs">
+            <Chip
+              variant="outline"
+              className="shrink-0 text-xs bg-blue-50 text-blue-600"
+            >
               Mercado Livre
             </Chip>
           </div>
@@ -146,26 +163,30 @@ export function WithAvatar() {
           <div className="flex items-end justify-between gap-3">
             <div className="flex flex-col gap-2">
               <div>
-                <div className="text-xl font-bold leading-none">R$ 123,45</div>
-                <span className="text-xs text-muted-foreground">por mês</span>
+                <div className="text-xl font-bold leading-none">
+                  R$ 123,45/mês
+                </div>
+                <span className="text-xs text-muted-foreground">
+                  de economia estimada
+                </span>
               </div>
 
               <div className="flex gap-4 text-xs">
                 <div>
                   <span className="text-muted-foreground">kWh: </span>
-                  <span className="font-medium">R$ 1.234,56</span>
+                  <span className="font-bold">R$ 1.234,56</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Clientes: </span>
-                  <span className="font-medium">123</span>
+                  <span className="font-bold">123</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Economia: </span>
-                  <span className="font-medium text-green-600">90%</span>
+                  <span className="font-bold text-green-600">90%</span>
                 </div>
                 <div>
                   <span className="text-muted-foreground">Avaliação: </span>
-                  <span className="font-medium text-yellow-600">4.5</span>
+                  <span className="font-bold text-yellow-600">4.5</span>
                 </div>
               </div>
             </div>
