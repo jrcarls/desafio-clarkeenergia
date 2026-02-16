@@ -1,9 +1,11 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from flask_cors import CORS
 
 db = SQLAlchemy()
 migrate = Migrate()
+cors = CORS()
 
 def create_app():
     app = Flask(__name__)
@@ -12,6 +14,7 @@ def create_app():
 
     db.init_app(app)
     migrate.init_app(app, db)
+    cors.init_app(app)
 
     from models.estado import Estado
     from models.fornecedor import Fornecedor
