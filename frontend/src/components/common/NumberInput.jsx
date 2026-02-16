@@ -1,10 +1,11 @@
 import { Label, NumberField, Description } from "@heroui/react";
 
-export function EnergyInput() {
+export function EnergyInput({ value, onChange }) {
   return (
     <NumberField
       className="w-full max-w-64"
-      defaultValue={0}
+      value={value}
+      onChange={onChange}
       minValue={0}
       step={0.1}
       formatOptions={{

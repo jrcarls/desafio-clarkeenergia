@@ -11,7 +11,7 @@ import {
 import { useAsyncList } from "@react-stately/data";
 import { useState } from "react";
 
-export function StateSelect() {
+export function StateSelect({ value, onChange }) {
   const [selectedKey, setSelectedKey] = useState(null);
   const { contains } = useFilter({ sensitivity: "base" });
 
@@ -34,8 +34,11 @@ export function StateSelect() {
       className="w-[256px]"
       placeholder="Selecione um estado"
       selectionMode="single"
-      value={selectedKey}
-      onChange={setSelectedKey}
+      selectedKey={selectedKey}
+      onSelectionChange={(key) => {
+        setSelectedKey(key);
+        if (onChange) onChange(key);
+      }}
     >
       <Label>Estado (UF)</Label>
 
