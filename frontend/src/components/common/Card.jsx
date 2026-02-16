@@ -5,7 +5,7 @@ export function WithAvatar() {
     <div className="flex flex-col gap-6 w-full max-w-4xl">
       {/* CARD GRANDE */}
       <Card className="col-span-12 flex h-auto flex-col sm:flex-row">
-        <div className="relative h-[160px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[140px] sm:w-[140px]">
+        <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-2xl sm:h-40 sm:w-40">
           <img
             alt="Cherries"
             className="pointer-events-none absolute inset-0 h-full w-full object-cover select-none"
@@ -68,7 +68,7 @@ export function WithAvatar() {
         </div>
       </Card>
       <Card className="col-span-12 flex h-auto flex-col sm:flex-row">
-        <div className="relative h-[160px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[140px] sm:w-[140px]">
+        <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-2xl sm:h-40 sm:w-40">
           <img
             alt="Cherries"
             className="pointer-events-none absolute inset-0 h-full w-full object-cover select-none"
@@ -131,7 +131,7 @@ export function WithAvatar() {
         </div>
       </Card>
       <Card className="col-span-12 flex h-auto flex-col sm:flex-row">
-        <div className="relative h-[160px] w-full shrink-0 overflow-hidden rounded-2xl sm:h-[140px] sm:w-[140px]">
+        <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-2xl sm:h-40 sm:w-40">
           <img
             alt="Cherries"
             className="pointer-events-none absolute inset-0 h-full w-full object-cover select-none"

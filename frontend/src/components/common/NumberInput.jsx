@@ -16,7 +16,7 @@ export function EnergyInput() {
       <Label>Consumo Mensal (kWh)</Label>
       <NumberField.Group>
         <NumberField.DecrementButton />
-        <NumberField.Input className="w-[120px]" />
+        <NumberField.Input className="w-30" />
         <NumberField.IncrementButton />
       </NumberField.Group>
       <Description>Informe o consumo mensal de energia</Description>
