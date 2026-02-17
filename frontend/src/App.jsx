@@ -6,6 +6,7 @@ import { Separator } from "@heroui/react";
 import { useState } from "react";
 import { Basic } from "./components/common/Tabs";
 import { API_URL } from "./config/api";
+import { ModalInfo } from "./components/common/Modal";
 import AppNavbar from "./components/layout/Navbar";
 
 function App() {
@@ -79,6 +80,7 @@ function App() {
 
   return (
     <>
+      <ModalInfo />
       <AppNavbar />
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
         <Surface
