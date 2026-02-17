@@ -14,7 +14,7 @@ def create_app():
 
     db.init_app(app)
     migrate.init_app(app, db)
-    cors.init_app(app)
+    cors.init_app(app, origins="*")
 
     from models.estado import Estado
     from models.fornecedor import Fornecedor
