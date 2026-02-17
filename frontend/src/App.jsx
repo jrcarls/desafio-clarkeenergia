@@ -82,7 +82,7 @@ function App() {
       <AppNavbar />
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
         <Surface
-          className="flex w-full max-w-6xl h-150 flex-col gap-3 rounded-3xl border p-4 md:p-6"
+          className="flex w-full max-w-6xl h-auto md:h-150 flex-col gap-3 rounded-3xl border p-4 md:p-6"
           variant="transparent"
         >
           <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch md:items-start h-full">
