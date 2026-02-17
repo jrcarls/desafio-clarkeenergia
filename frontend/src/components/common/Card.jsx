@@ -18,7 +18,7 @@ export function WithAvatar({ fornecedor }) {
             className="pointer-events-none absolute inset-0 h-full w-full object-cover select-none"
             loading="lazy"
             src={
-              fornecedor.logo_url ||
+              fornecedor.logo ||
               "https://heroui-assets.nyc3.cdn.digitaloceanspaces.com/docs/cherries.jpeg"
             }
           />
