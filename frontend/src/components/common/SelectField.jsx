@@ -8,6 +8,7 @@ import {
   useFilter,
 } from "@heroui/react";
 
+import { API_URL } from "../../config/api";
 import { useAsyncList } from "@react-stately/data";
 import { useState } from "react";
 
@@ -17,7 +18,7 @@ export function StateSelect({ value, onChange }) {
 
   const list = useAsyncList({
     async load({ signal }) {
-      const res = await fetch("http://127.0.0.1:5000/api/v1/estados", {
+      const res = await fetch(`${API_URL}/api/v1/estados`, {
         signal,
       });
 

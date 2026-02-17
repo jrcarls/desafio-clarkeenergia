@@ -5,6 +5,7 @@ import { Surface } from "@heroui/react";
 import { Separator } from "@heroui/react";
 import { useState } from "react";
 import { Basic } from "./components/common/Tabs";
+import { API_URL } from "./config/api";
 import AppNavbar from "./components/layout/Navbar";
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/api/v1/simulador", {
+      const response = await fetch(`${API_URL}/api/v1/simulador`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
