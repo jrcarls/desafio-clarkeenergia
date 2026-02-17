@@ -5,6 +5,7 @@ import { Surface } from "@heroui/react";
 import { Separator } from "@heroui/react";
 import { useState } from "react";
 import { Basic } from "./components/common/Tabs";
+import AppNavbar from "./components/layout/Navbar";
 
 function App() {
   const [estadoId, setEstadoId] = useState(null);
@@ -76,29 +77,32 @@ function App() {
   const dadosProcessados = processarResultados(resultado);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
-      <Surface
-        className="flex w-full max-w-6xl h-150 flex-col gap-3 rounded-3xl border p-4 md:p-6"
-        variant="transparent"
-      >
-        <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch md:items-start h-full">
-          <div className="flex flex-col gap-4 md:gap-6 w-full md:w-auto md:min-w-70">
-            <StateSelect value={estadoId} onChange={setEstadoId} />
-            <EnergyInput value={consumoKwh} onChange={setConsumoKwh} />
-            <Separator />
-            <ButtonSearch onClick={handleBuscar} loading={loading} />
+    <>
+      <AppNavbar />
+      <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+        <Surface
+          className="flex w-full max-w-6xl h-150 flex-col gap-3 rounded-3xl border p-4 md:p-6"
+          variant="transparent"
+        >
+          <div className="flex flex-col md:flex-row gap-6 md:gap-10 items-stretch md:items-start h-full">
+            <div className="flex flex-col gap-4 md:gap-6 w-full md:w-auto md:min-w-70">
+              <StateSelect value={estadoId} onChange={setEstadoId} />
+              <EnergyInput value={consumoKwh} onChange={setConsumoKwh} />
+              <Separator />
+              <ButtonSearch onClick={handleBuscar} loading={loading} />
 
-            {error && <div className="text-red-500 text-sm">{error}</div>}
+              {error && <div className="text-red-500 text-sm">{error}</div>}
 
-            <Separator className="my-2 md:hidden" />
+              <Separator className="my-2 md:hidden" />
+            </div>
+
+            <div className="flex-1 w-full min-w-0 overflow-hidden">
+              <Basic fornecedores={dadosProcessados} />
+            </div>
           </div>
-
-          <div className="flex-1 w-full min-w-0 overflow-hidden">
-            <Basic fornecedores={dadosProcessados} />
-          </div>
-        </div>
-      </Surface>
-    </div>
+        </Surface>
+      </div>
+    </>
   );
 }
 
