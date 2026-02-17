@@ -63,16 +63,16 @@ def seed_solucoes():
 
 def seed_fornecedores():
     fornecedores = [
-        {"nome": "SolarVerde Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=SolarVerde", "estado_origem_id": 1, "total_clientes": 1200, "avaliacoes_media": 4.5},
-        {"nome": "EcoWatts Brasil", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=EcoWatts", "estado_origem_id": 2, "total_clientes": 850, "avaliacoes_media": 4.0},
-        {"nome": "LuzNova Soluções", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=LuzNova", "estado_origem_id": 3, "total_clientes": 2100, "avaliacoes_media": 4.8},
-        {"nome": "PowerTech Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=PowerTech", "estado_origem_id": 4, "total_clientes": 1650, "avaliacoes_media": 4.2},
-        {"nome": "VentusForce", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=VentusForce", "estado_origem_id": 5, "total_clientes": 980, "avaliacoes_media": 4.7},
-        {"nome": "BioEnergia Prime", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=BioEnergia", "estado_origem_id": 6, "total_clientes": 1450, "avaliacoes_media": 4.3},
-        {"nome": "Eletron Sustentável", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=Eletron", "estado_origem_id": 7, "total_clientes": 2300, "avaliacoes_media": 4.6},
-        {"nome": "GreenPower Sul", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=GreenPower", "estado_origem_id": 8, "total_clientes": 1800, "avaliacoes_media": 4.4},
-        {"nome": "SunRise Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=SunRise", "estado_origem_id": 9, "total_clientes": 3200, "avaliacoes_media": 4.9},
-        {"nome": "AmpereVolt Solutions", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=AmpereVolt", "estado_origem_id": 10, "total_clientes": 1100, "avaliacoes_media": 4.1},
+        {"nome": "SolarVerde Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=SolarVerde&backgroundColor=22c55e", "estado_origem_id": 1, "total_clientes": 1200, "avaliacoes_media": 4.5},
+        {"nome": "EcoWatts Brasil", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=EcoWatts&backgroundColor=3b82f6", "estado_origem_id": 2, "total_clientes": 850, "avaliacoes_media": 4.0},
+        {"nome": "LuzNova Soluções", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=LuzNova&backgroundColor=f59e0b", "estado_origem_id": 3, "total_clientes": 2100, "avaliacoes_media": 4.8},
+        {"nome": "PowerTech Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=PowerTech&backgroundColor=ef4444", "estado_origem_id": 4, "total_clientes": 1650, "avaliacoes_media": 4.2},
+        {"nome": "VentusForce", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=VentusForce&backgroundColor=8b5cf6", "estado_origem_id": 5, "total_clientes": 980, "avaliacoes_media": 4.7},
+        {"nome": "BioEnergia Prime", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=BioEnergia&backgroundColor=06b6d4", "estado_origem_id": 6, "total_clientes": 1450, "avaliacoes_media": 4.3},
+        {"nome": "Eletron Sustentável", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=Eletron&backgroundColor=ec4899", "estado_origem_id": 7, "total_clientes": 2300, "avaliacoes_media": 4.6},
+        {"nome": "GreenPower Sul", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=GreenPower&backgroundColor=14b8a6", "estado_origem_id": 8, "total_clientes": 1800, "avaliacoes_media": 4.4},
+        {"nome": "SunRise Energia", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=SunRise&backgroundColor=f97316", "estado_origem_id": 9, "total_clientes": 3200, "avaliacoes_media": 4.9},
+        {"nome": "AmpereVolt Solutions", "logo": "https://api.dicebear.com/7.x/shapes/svg?seed=AmpereVolt&backgroundColor=6366f1", "estado_origem_id": 10, "total_clientes": 1100, "avaliacoes_media": 4.1},
     ]
 
 
