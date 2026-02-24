@@ -4,7 +4,7 @@ import { Modal, Button } from "@heroui/react";
 
 export function ModalInfo() {
   const [isOpen, setIsOpen] = useState(true);
-  const [seconds, setSeconds] = useState(50);
+  const [seconds, setSeconds] = useState(60);
 
   useEffect(() => {
     if (!isOpen) return;
@@ -33,7 +33,7 @@ export function ModalInfo() {
               <Modal.Icon className="bg-default text-foreground">
                 <Rocket className="size-5" />
               </Modal.Icon>
-              <Modal.Heading>Olá, recrutador!</Modal.Heading>
+              <Modal.Heading>Olá!</Modal.Heading>
             </Modal.Header>
             <Modal.Body>
               <p>
