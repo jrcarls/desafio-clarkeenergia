@@ -39,8 +39,7 @@ export function ModalInfo() {
               <p>
                 Por favor, aguarde até{" "}
                 <span className="font-bold text-red-500">{seconds}</span>{" "}
-                segundos para primeira solicitação na API (motivo: plano free do
-                Render).
+                segundos para sistema conectar com base e chamar API.
               </p>
             </Modal.Body>
             <Modal.Footer>
