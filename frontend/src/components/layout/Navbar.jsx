@@ -12,7 +12,7 @@ export default function AppNavbar() {
         className="md:size-md"
         onPress={() =>
           window.open(
-            "https://github.com/jeanreis-dev/desafio-clarkeenergia",
+            "https://github.com/jrcarls/desafio-clarkeenergia",
             "_blank",
           )
         }
